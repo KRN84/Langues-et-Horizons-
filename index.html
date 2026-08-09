@@ -5,22 +5,223 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Langues & Horizons</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #243447;
+      background: #f8f5ef;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #315c68, #6f9b91);
+      color: white;
+      text-align: center;
+      padding: 90px 20px 80px;
+    }
+
+    header h1 {
+      font-size: 3.2rem;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      font-weight: normal;
+      margin-bottom: 35px;
+    }
+
+    .slogan {
+      max-width: 750px;
+      margin: auto;
+      font-size: 1.15rem;
+      line-height: 1.8;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 70px 25px;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 800px;
+      margin: auto auto 60px;
+    }
+
+    .intro h2 {
+      font-size: 2rem;
+      margin-bottom: 25px;
+      color: #315c68;
+    }
+
+    .intro p {
+      margin-bottom: 18px;
+      font-size: 1.08rem;
+    }
+
+    .highlight {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #315c68;
+      margin: 30px 0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .card {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card .icon {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #315c68;
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: #243447;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 2.3rem;
+      }
+
+      header h2 {
+        font-size: 1.2rem;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
 
-  <h1>🌍 Langues & Horizons</h1>
+  <header>
+    <h1>🌍 Langues & Horizons</h1>
 
-  <h2>Voyager, apprendre, découvrir autrement</h2>
+```
+<h2>Une langue pour communiquer, pour faire des rencontres.</h2>
+
+<div class="slogan">
+  Les cours donnent les bases.<br>
+  L'expérience donne la confiance.<br>
+  Les échanges et les voyages font progresser.
+</div>
+```
+
+  </header>
+
+  <main>
+
+```
+<section class="intro">
+
+  <h2>Et si apprendre une langue était plus simple qu'on ne le pense ?</h2>
 
   <p>
-    Bienvenue sur Langues & Horizons !
+    Vous pensez qu'apprendre une langue est trop difficile ?
+    Que vous n'avez pas le niveau pour oser parler ?
+    Que vous devez maîtriser la grammaire et connaître beaucoup
+    de vocabulaire avant de pouvoir échanger ?
   </p>
 
   <p>
-    Un espace autour des langues, des voyages, des cultures
-    et des découvertes à partager.
+    Et si on voyait les choses autrement ?
   </p>
+
+  <p>
+    On n'a pas besoin de parler parfaitement une langue pour communiquer.
+  </p>
+
+  <p>
+    Quelques mots, une phrase simple, un sourire, un peu d'improvisation…
+    peuvent déjà permettre de demander son chemin, faire connaissance,
+    raconter quelque chose ou simplement partager un moment avec quelqu'un.
+  </p>
+
+  <p class="highlight">
+    L'objectif n'est pas d'être parfait.
+    L'objectif est de pouvoir s'exprimer et se faire comprendre.
+  </p>
+
+  <p>
+    La maîtrise vient progressivement, avec le temps, la pratique
+    et surtout l'expérience.
+  </p>
+
+  <p>
+    Parce qu'une langue est avant tout un moyen
+    <strong>d'aller vers les autres.</strong>
+  </p>
+
+</section>
+
+<section class="cards">
+
+  <div class="card">
+    <div class="icon">🗣️</div>
+    <h3>Langues</h3>
+    <p>
+      Des cours pour acquérir les bases, prendre confiance
+      et oser communiquer.
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="icon">✈️</div>
+    <h3>Horizons</h3>
+    <p>
+      Des voyages, des destinations et des expériences
+      pour découvrir le monde et aller à la rencontre des autres.
+    </p>
+  </div>
+
+</section>
+```
+
+  </main>
+
+  <footer>
+    <p>© 2026 Langues & Horizons</p>
+  </footer>
 
 </body>
 </html>
