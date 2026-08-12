@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -23,8 +24,8 @@
       min-height: 100vh;
       background-image:
         linear-gradient(
-          rgba(35, 45, 42, 0.18),
-          rgba(35, 45, 42, 0.18)
+          rgba(35, 45, 42, 0.08),
+          rgba(35, 45, 42, 0.08)
         ),
         url("option%201%20pour%20site.png");
 
@@ -37,60 +38,11 @@
       padding: 30px;
     }
 
-    .content {
-      max-width: 850px;
-      padding: 40px;
-    }
-
-    h1 {
-      font-size: clamp(3.5rem, 9vw, 7rem);
-      font-weight: 400;
-      letter-spacing: 4px;
-      margin-bottom: 25px;
-      text-shadow: 0 3px 18px rgba(0, 0, 0, 0.35);
-    }
-
-    .tagline {
-      font-family: Arial, sans-serif;
-      font-size: clamp(0.85rem, 1.8vw, 1.1rem);
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      margin-bottom: 45px;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-    }
-
-    .button {
-      display: inline-block;
-      padding: 15px 38px;
-      border: 1px solid rgba(255,255,255,0.9);
-      border-radius: 30px;
-      color: white;
-      text-decoration: none;
-      font-family: Arial, sans-serif;
-      font-size: 0.9rem;
-      letter-spacing: 2px;
-      transition: all 0.3s ease;
-      background: rgba(255,255,255,0.08);
-      backdrop-filter: blur(3px);
-    }
-
-    .button:hover {
-      background: white;
-      color: #35413e;
-    }
-
     @media (max-width: 600px) {
-      .content {
-        padding: 20px;
-      }
-
-      h1 {
-        letter-spacing: 2px;
-      }
-
-      .tagline {
-        letter-spacing: 2px;
-        line-height: 1.8;
+      .hero {
+        min-height: 100svh;
+        padding: 15px;
+        background-position: center;
       }
     }
   </style>
@@ -99,22 +51,9 @@
 <body>
 
   <section class="hero">
-
-    <div class="content">
-
-      <h1>Langues &amp; Horizons</h1>
-
-      <p class="tagline">
-        Apprendre · Oser · Rencontrer · Voyager · Progresser
-      </p>
-
-      <a href="#decouvrir" class="button">
-        Découvrir
-      </a>
-
-    </div>
-
   </section>
 
 </body>
 </html>
+```
+
