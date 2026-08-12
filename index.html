@@ -3,79 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Langues & Horizons</title>
 
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
       font-family: Georgia, "Times New Roman", serif;
-      color: #2f3a3a;
-      background: #f7f4ee;
+      background: #f5f1e9;
+      color: white;
     }
 
     .hero {
       min-height: 100vh;
       background-image:
-        linear-gradient(rgba(30, 45, 45, 0.28), rgba(30, 45, 45, 0.28)),
+        linear-gradient(
+          rgba(35, 45, 42, 0.18),
+          rgba(35, 45, 42, 0.18)
+        ),
         url("option%201%20pour%20site.png");
+
       background-size: cover;
       background-position: center;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 40px 20px;
+      padding: 30px;
     }
 
-    .hero-content {
-      max-width: 900px;
-      color: white;
+    .content {
+      max-width: 850px;
+      padding: 40px;
     }
 
     h1 {
-      font-size: clamp(3rem, 8vw, 6.5rem);
+      font-size: clamp(3.5rem, 9vw, 7rem);
       font-weight: 400;
-      letter-spacing: 3px;
-      margin-bottom: 20px;
-      text-shadow: 0 3px 15px rgba(0, 0, 0, 0.35);
+      letter-spacing: 4px;
+      margin-bottom: 25px;
+      text-shadow: 0 3px 18px rgba(0, 0, 0, 0.35);
     }
 
-    .subtitle {
-      font-size: clamp(1.2rem, 2.5vw, 1.8rem);
-      line-height: 1.6;
-      margin-bottom: 35px;
+    .tagline {
+      font-family: Arial, sans-serif;
+      font-size: clamp(0.85rem, 1.8vw, 1.1rem);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 45px;
       text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-    }
-
-    .slogan {
-      font-size: clamp(1rem, 2vw, 1.35rem);
-      font-style: italic;
-      line-height: 1.7;
-      margin: 0 auto 40px;
-      max-width: 700px;
     }
 
     .button {
       display: inline-block;
-      padding: 14px 32px;
-      border: 1px solid white;
+      padding: 15px 38px;
+      border: 1px solid rgba(255,255,255,0.9);
       border-radius: 30px;
       color: white;
       text-decoration: none;
       font-family: Arial, sans-serif;
-      font-size: 0.95rem;
-      letter-spacing: 1px;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
       transition: all 0.3s ease;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(3px);
     }
 
     .button:hover {
       background: white;
-      color: #2f3a3a;
+      color: #35413e;
+    }
+
+    @media (max-width: 600px) {
+      .content {
+        padding: 20px;
+      }
+
+      h1 {
+        letter-spacing: 2px;
+      }
+
+      .tagline {
+        letter-spacing: 2px;
+        line-height: 1.8;
+      }
     }
   </style>
 </head>
@@ -83,18 +99,13 @@
 <body>
 
   <section class="hero">
-    <div class="hero-content">
+
+    <div class="content">
 
       <h1>Langues &amp; Horizons</h1>
 
-      <p class="subtitle">
-        Apprendre une langue, c’est ouvrir une porte vers le monde.
-      </p>
-
-      <p class="slogan">
-        Les cours donnent les bases.<br>
-        L’expérience donne la confiance.<br>
-        Les échanges et les voyages font progresser.
+      <p class="tagline">
+        Apprendre · Oser · Rencontrer · Voyager · Progresser
       </p>
 
       <a href="#decouvrir" class="button">
@@ -102,6 +113,7 @@
       </a>
 
     </div>
+
   </section>
 
 </body>
