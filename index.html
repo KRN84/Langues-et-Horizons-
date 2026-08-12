@@ -300,41 +300,121 @@
        MOBILE
        ========================= */
 
-    @media (max-width: 700px) {
+@media (max-width: 700px) {
 
-      .hero {
-        min-height: 100svh;
-        padding: 15px;
-      }
+  /* Image d'accueil */
+  .hero {
+    min-height: 100svh;
+    padding: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #35413e;
+    background-position: center top;
+  }
 
-      .hero-button {
-        margin-bottom: 20px;
-      }
+  /* Bouton Découvrir */
+  .hero-button {
+    margin-bottom: 20px;
+    padding: 13px 30px;
+    font-size: 0.85rem;
+  }
 
-      .courses {
-        padding: 65px 18px;
-      }
+  /* Section cours */
+  .courses {
+    padding: 60px 18px;
+  }
 
-      .cards {
-        grid-template-columns: 1fr;
-      }
+  .section-title h2 {
+    font-size: 2.3rem;
+    line-height: 1.2;
+  }
 
-      .practical-grid {
-        grid-template-columns: 1fr;
-      }
+  .languages {
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 45px;
+  }
 
-      .section-title h2 {
-        font-size: 2.3rem;
-      }
+  .intro h3 {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
 
-      .intro h3 {
-        font-size: 1.4rem;
-      }
+  .intro p {
+    font-size: 1rem;
+  }
 
-      .info-block h3 {
-        font-size: 1.35rem;
-      }
-    }
+  /* Tarifs */
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .card {
+    padding: 28px 22px;
+  }
+
+  /* Blocs d'information */
+  .info-block h3 {
+    font-size: 1.35rem;
+    line-height: 1.4;
+  }
+
+  .info-block p {
+    font-size: 0.98rem;
+  }
+
+  /* Infos pratiques */
+  .practical {
+    margin-top: 60px;
+    padding-top: 55px;
+  }
+
+  .practical h2 {
+    font-size: 2rem;
+  }
+
+  .practical-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .practical-card {
+    padding: 25px 22px;
+  }
+
+  /* FAQ */
+  .faq {
+    margin-top: 60px;
+    padding-top: 55px;
+  }
+
+  .faq h2 {
+    font-size: 2rem;
+  }
+
+  details {
+    padding: 16px 18px;
+  }
+
+  summary {
+    font-size: 0.98rem;
+  }
+
+  details p {
+    font-size: 0.95rem;
+  }
+
+  /* Contact */
+  .contact {
+    margin-top: 60px;
+    padding: 45px 20px;
+  }
+
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+}
   </style>
 </head>
 
