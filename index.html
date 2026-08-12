@@ -14,11 +14,20 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Georgia, "Times New Roman", serif;
       background: #f5f1e9;
-      color: white;
+      color: #35413e;
+      line-height: 1.7;
     }
+
+    /* =========================
+       PAGE D'ACCUEIL
+       ========================= */
 
     .hero {
       min-height: 100vh;
@@ -31,18 +40,299 @@
 
       background-size: cover;
       background-position: center;
+
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
-      text-align: center;
+
       padding: 30px;
     }
 
-    @media (max-width: 600px) {
+    .hero-button {
+      display: inline-block;
+      margin-bottom: 35px;
+
+      padding: 14px 38px;
+
+      border: 1px solid white;
+      border-radius: 30px;
+
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(4px);
+
+      color: white;
+      text-decoration: none;
+
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+
+      transition: all 0.3s ease;
+    }
+
+    .hero-button:hover {
+      background: white;
+      color: #35413e;
+    }
+
+    /* =========================
+       SECTION COURS
+       ========================= */
+
+    .courses {
+      background: #f5f1e9;
+      padding: 90px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: #35413e;
+    }
+
+    .languages {
+      text-align: center;
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+      color: #6b756f;
+      margin-bottom: 60px;
+    }
+
+    .intro {
+      max-width: 760px;
+      margin: 0 auto 60px;
+      text-align: center;
+    }
+
+    .intro h3 {
+      font-size: 1.6rem;
+      font-weight: 400;
+      margin-bottom: 15px;
+      color: #35413e;
+    }
+
+    .intro p {
+      font-size: 1.05rem;
+    }
+
+    /* =========================
+       FORMULES
+       ========================= */
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-bottom: 80px;
+    }
+
+    .card {
+      background: white;
+      padding: 35px 25px;
+      text-align: center;
+      border-radius: 4px;
+      box-shadow: 0 5px 20px rgba(50, 60, 55, 0.08);
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      color: #59675f;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+    }
+
+    /* =========================
+       BLOCS
+       ========================= */
+
+    .info-block {
+      max-width: 800px;
+      margin: 0 auto 55px;
+    }
+
+    .info-block h3 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 18px;
+      color: #35413e;
+    }
+
+    .info-block p {
+      margin-bottom: 12px;
+    }
+
+    .highlight {
+      font-weight: bold;
+    }
+
+    /* =========================
+       INFOS PRATIQUES
+       ========================= */
+
+    .practical {
+      margin-top: 80px;
+      padding-top: 70px;
+      border-top: 1px solid rgba(53, 65, 62, 0.2);
+    }
+
+    .practical h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: 400;
+      margin-bottom: 45px;
+    }
+
+    .practical-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .practical-card {
+      background: rgba(255,255,255,0.65);
+      padding: 30px;
+      border-radius: 4px;
+    }
+
+    .practical-card h3 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-bottom: 12px;
+    }
+
+    /* =========================
+       FAQ
+       ========================= */
+
+    .faq {
+      margin-top: 80px;
+      padding-top: 70px;
+      border-top: 1px solid rgba(53, 65, 62, 0.2);
+    }
+
+    .faq h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: 400;
+      margin-bottom: 40px;
+    }
+
+    details {
+      background: white;
+      margin-bottom: 12px;
+      padding: 18px 22px;
+      border-radius: 4px;
+      box-shadow: 0 3px 12px rgba(50, 60, 55, 0.05);
+    }
+
+    summary {
+      cursor: pointer;
+      font-size: 1rem;
+      color: #35413e;
+    }
+
+    details p {
+      padding-top: 15px;
+      color: #59635f;
+    }
+
+    /* =========================
+       CONTACT
+       ========================= */
+
+    .contact {
+      text-align: center;
+      margin-top: 80px;
+      padding: 55px 20px;
+      background: #35413e;
+      color: white;
+      border-radius: 4px;
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      margin-bottom: 25px;
+    }
+
+    .contact-button {
+      display: inline-block;
+      padding: 13px 32px;
+      border: 1px solid white;
+      border-radius: 30px;
+      color: white;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+
+    .contact-button:hover {
+      background: white;
+      color: #35413e;
+    }
+
+    /* =========================
+       MOBILE
+       ========================= */
+
+    @media (max-width: 700px) {
+
       .hero {
         min-height: 100svh;
         padding: 15px;
-        background-position: center;
+      }
+
+      .hero-button {
+        margin-bottom: 20px;
+      }
+
+      .courses {
+        padding: 65px 18px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .practical-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title h2 {
+        font-size: 2.3rem;
+      }
+
+      .intro h3 {
+        font-size: 1.4rem;
+      }
+
+      .info-block h3 {
+        font-size: 1.35rem;
       }
     }
   </style>
@@ -50,10 +340,342 @@
 
 <body>
 
+  <!-- =========================
+       ACCUEIL
+       ========================= -->
+
   <section class="hero">
+
+    <a href="#decouvrir" class="hero-button">
+      Découvrir
+    </a>
+
+  </section>
+
+
+  <!-- =========================
+       COURS DE LANGUES
+       ========================= -->
+
+  <section class="courses" id="decouvrir">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Cours de langues</h2>
+      </div>
+
+      <div class="languages">
+        Anglais · Espagnol · Italien
+      </div>
+
+
+      <div class="intro">
+
+        <h3>Des cours adaptés à chacun — enfants & adultes</h3>
+
+        <p>
+          Des cours pensés pour progresser à son rythme,
+          structurés et avec une attention particulière portée
+          à la compréhension et à la confiance.
+        </p>
+
+      </div>
+
+
+      <!-- FORMULES -->
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Cours individuel</h3>
+
+          <div class="price">
+            25 € / heure
+          </div>
+
+          <p>
+            Un accompagnement adapté au niveau,
+            aux besoins et aux objectifs de l’élève.
+          </p>
+        </div>
+
+
+        <div class="card">
+          <h3>Cours à 2</h3>
+
+          <div class="price">
+            17 € / heure / personne
+          </div>
+
+          <p>
+            Une formule à partager avec un autre élève
+            de niveau comparable.
+          </p>
+        </div>
+
+
+        <div class="card">
+          <h3>Petit groupe</h3>
+
+          <div class="price">
+            14 € / heure / personne
+          </div>
+
+          <p>
+            Groupe de 3 à 4 personnes maximum,
+            avec des niveaux comparables.
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- FORMULE ANNUELLE -->
+
+      <div class="info-block">
+
+        <h3>Une formule régulière sur l'année</h3>
+
+        <p>
+          <span class="highlight">
+            De septembre à mi-juin — hors vacances scolaires.
+          </span>
+        </p>
+
+        <p>
+          La formule annuelle comprend <strong>34 leçons</strong>.
+        </p>
+
+        <p>
+          Les cours sont facturés selon le calendrier prévu.
+          En cas d'absence ou d'empêchement, une leçon peut être
+          récupérée dans la mesure du possible et selon les disponibilités.
+        </p>
+
+      </div>
+
+
+      <!-- COURS A LA CARTE -->
+
+      <div class="info-block">
+
+        <h3>Cours à la carte</h3>
+
+        <p>
+          Il est également possible de demander des cours pour
+          un besoin ponctuel ou une organisation différente de
+          la formule annuelle.
+        </p>
+
+        <p>
+          Ces cours sont organisés sur demande et selon les disponibilités.
+        </p>
+
+      </div>
+
+
+      <!-- GROUPES -->
+
+      <div class="info-block">
+
+        <h3>Comment sont constitués les groupes ?</h3>
+
+        <p>
+          Pour les <strong>enfants et adolescents</strong>, les groupes
+          sont constitués avec des élèves du même âge et de niveau comparable.
+          Les niveaux ne sont pas mélangés.
+        </p>
+
+        <p>
+          En général, ce sont les parents qui constituent le groupe
+          en proposant à leur enfant de venir avec un ou plusieurs
+          copains ou copines de son âge.
+        </p>
+
+        <p>
+          Pour les <strong>adultes</strong>, le principe est similaire :
+          vous pouvez constituer votre groupe avec des amis,
+          collègues ou connaissances.
+        </p>
+
+        <p>
+          Je ne constitue donc généralement pas les groupes moi-même.
+          Une fois le groupe formé, nous voyons ensemble les possibilités
+          de jour et d'horaire.
+        </p>
+
+      </div>
+
+
+      <!-- INFOS PRATIQUES -->
+
+      <div class="practical">
+
+        <h2>Infos pratiques</h2>
+
+        <div class="practical-grid">
+
+          <div class="practical-card">
+
+            <h3>Lieu des cours</h3>
+
+            <p>
+              Le lieu des cours est communiqué lors de la prise de contact,
+              selon la formule choisie et les disponibilités.
+            </p>
+
+          </div>
+
+
+          <div class="practical-card">
+
+            <h3>Avantage fiscal</h3>
+
+            <p>
+              Les cours peuvent ouvrir droit à un crédit d'impôt dans le
+              cadre des Services à la Personne (SAP), sous réserve de
+              remplir les conditions d'éligibilité en vigueur.
+            </p>
+
+            <p>
+              Les modalités sont précisées lors de la prise de contact.
+            </p>
+
+          </div>
+
+
+          <div class="practical-card">
+
+            <h3>Règlement</h3>
+
+            <p>
+              Pour les cours réguliers, le règlement s'effectue en 3 fois.
+            </p>
+
+            <p>
+              Les 3 chèques sont remis en septembre et encaissés
+              respectivement début octobre, début janvier et début avril.
+            </p>
+
+            <p>
+              Il est également possible de régler la totalité de l'année
+              en espèces ou chèque, dès le début des cours.
+            </p>
+
+            <p>
+              <strong>Le règlement par carte bancaire n'est pas proposé.</strong>
+            </p>
+
+          </div>
+
+          <div class="practical-card">
+
+            <h3>Commencer en cours d'année</h3>
+
+            <p>
+              C'est possible selon les places disponibles et le niveau
+              du groupe.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- FAQ -->
+
+      <div class="faq">
+
+        <h2>Questions fréquentes</h2>
+
+
+        <details>
+
+          <summary>
+            Les groupes sont-ils constitués par l'enseignante ?
+          </summary>
+
+          <p>
+            Généralement non. Pour les enfants, les parents peuvent
+            constituer un groupe avec des copains ou copines du même âge
+            et de niveau comparable.
+          </p>
+
+          <p>
+            Pour les adultes, vous pouvez également constituer votre groupe
+            entre amis ou connaissances.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Est-il possible de commencer en cours d'année ?
+          </summary>
+
+          <p>
+            Oui, selon les places disponibles et le niveau du groupe.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Puis-je prendre seulement quelques cours ?
+          </summary>
+
+          <p>
+            Oui, des cours à la carte peuvent être proposés selon
+            les disponibilités.
+          </p>
+
+        </details>
+
+
+        <details>
+
+          <summary>
+            Que se passe-t-il en cas d'absence ?
+          </summary>
+
+          <p>
+            Les cours sont facturés selon le calendrier prévu et peuvent
+            être récupérés dans la mesure du possible, selon les disponibilités.
+          </p>
+
+        </details>
+
+      </div>
+
+
+      <!-- CONTACT -->
+
+      <div class="contact">
+
+        <h2>Une question ?</h2>
+
+        <p>
+          Contactez-moi pour en discuter et voir ensemble
+          ce qui est possible.
+        </p>
+
+        <a href="mailto:kg.lbservices@gmail.com" class="contact-button">
+          Contactez-moi
+        </a>
+
+      </div>
+
+    </div>
+
   </section>
 
 </body>
 </html>
 ```
-
